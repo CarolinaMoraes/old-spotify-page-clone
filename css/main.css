@@ -1,0 +1,206 @@
+
+:root{
+    --text: #1A1A1A;
+    --green: #00B172;  
+}
+
+
+body{
+    font-family: 'Montserrat', 'Arial', 'Sans-serif' !important;
+    margin: 0;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+p{
+    font-weight: 300;
+}
+
+h3{
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* UPPER PAGE */
+
+nav img{
+    width: 230px;
+    padding: 5px 25px;
+}
+
+.nav-links li{
+    display: inline;
+    margin: 0 10px;
+    transition: color .2s;
+    color: black;
+}
+
+.nav-links li:hover{
+    color: var(--green);
+}
+
+.nav{
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.hero{
+    background: url('../images/landing.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero h1{
+    margin: 0;
+    font-size: 5rem;
+}
+
+.hero p{
+    font-size: 2rem;
+}
+
+.hero-text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* MIDDLE PAGE */
+.middle-page{
+    height: 75vh;
+    text-align: center;
+}
+.middle-page h3{
+    text-decoration-color: var(--green);
+}
+
+.box-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-icon{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.quality-box {
+    text-align: center;
+    flex: 1;
+}
+
+.quality-box h4{
+    font-size: 2rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.quality-box p{
+    width: 75%;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+/* BOTTOM PAGE */
+.bottom-page{
+    background-color: var(--green);
+    margin: 0 25px 15px;
+    padding: 2% 5% 2%;
+    color: white;
+}
+.bottom-page h3{
+    margin-bottom: 0;
+}
+
+.features{
+    width: 25%;
+    margin: 0;
+}
+
+.flex-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.box-feature h4 {
+    font-size: 1.5rem;
+}
+
+.bottom-icon{
+    width: 120px;
+    height: 120px;
+}
+
+.app-screen{
+    width: 27%;
+}
+
+@media (max-width: 850px){
+
+    .middle-page{
+        height: auto;
+        text-align: center;
+    }
+
+    .box-wrapper{
+        display: block;
+    }
+
+    .flex-bottom{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bottom-page{
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .features{
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .app-screen{
+        display: none;
+    }
+}
+@media (max-width: 685px){
+
+    .hero h1{
+        font-size: 4rem;
+    }
+
+    .hero p{
+        margin: 10px auto;
+        width: 85%;
+    }
+}

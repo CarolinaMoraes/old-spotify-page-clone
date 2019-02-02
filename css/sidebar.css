@@ -1,0 +1,51 @@
+/* Hamburger & Sidebar */
+.btn-hamburger{
+    display:none !important;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.sidebar{
+    display:none;
+    background-color: #00B172;
+    text-align: center;
+}
+
+.link-sidebar{
+    padding: 12px 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: color .2s;
+}
+
+.link-sidebar:hover{
+    color: black;
+}
+
+.btn-close{
+    background:white;
+    margin:5px;
+    width: 30%;
+    border-radius: 3px;
+    height: 35px;
+    font-size: 1rem;
+    border: none;
+    color: #01c6af;
+    cursor: pointer;
+}
+
+@media (max-width: 685px){
+
+    .nav-links{
+        display: none;
+    }
+
+    .btn-hamburger{
+        display:block !important;
+    }
+}
